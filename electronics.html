@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+<script>
+  fetch('navbar.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>
+    <div class="container">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>Shop by category</h3>
+    <ul>
+      <li><a href="#">Cameras & Photo</a></li>
+      <li><a href="#">Cell Phones & Accessories</a></li>
+      <li><a href="#">Computers/Tablets & Networking</a></li>
+      <li><a href="#">Home Surveillance</a></li>
+      <li><a href="#">Major Appliances</a></li>
+      <li><a href="#">Portable Audio & Headphones</a></li>
+      <li><a href="#">Surveillance & Smart Home</a></li>
+      <li><a href="#">TV, Video & Home Audio</a></li>
+      <li><a href="#">Vehicle Electronics & GPS</a></li>
+      <li><a href="#">Video Games & Consoles</a></li>
+      <li><a href="#">Virtual Reality</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="breadcrumb">eBay > Electronics</div>
+    <div class="title">Electronics</div>
+
+    <div class="banner">
+      <h2>Reconditioned tech</h2>
+      <p>See the savings on refurb devices</p>
+      <button>View the deal</button>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Smartphones & Smartwatches</h3>
+        <img src="https://i.imgur.com/2nCt3Sbl.jpg" alt="Smartphones">
+      </div>
+      <div class="card">
+        <h3>Computers & Accessories</h3>
+        <img src="https://i.imgur.com/8RKXAIV.jpg" alt="Computers">
+      </div>
+      <div class="card">
+        <h3>Tablets & eReaders</h3>
+        <img src="https://i.imgur.com/3vYK5nI.jpg" alt="Tablets">
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
