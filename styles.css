@@ -553,6 +553,7 @@ input, select {
       margin: 50px auto;
       padding: 0 20px;
       margin-top: 60px;
+      border-radius: 50%;
     }
 
     .categories-wrapper h2 {
@@ -564,26 +565,30 @@ input, select {
     .categories-list {
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
+      overflow-x: auto;
       gap: 20px;
     }
 
     .category-box {
       flex: 1 0 110px;
       text-align: center;
+      border-radius: 50%;
     }
 
     .circle-img {
-      width: 133px;
-      height: 133px;
-      border-radius: 50%;
-      background: #f3f3f3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      overflow: hidden;
-      cursor: pointer;
+      width: 120px;              /* Adjusted for better fit */
+  height: 120px;
+  border-radius: 50%;        /* Keeps it circular */
+  background: #f3f3f3;       /* Light background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #ccc;    /* Optional: gives a light border */
+  transition: border 0.3s;   /* Smooth hover effect */
+  cursor: pointer;
     }
 
     .circle-img img {
@@ -1247,73 +1252,96 @@ input, select {
       flex: 1;
     }
 
-    .breadcrumb {
-      font-size: 14px;
-      color: #888;
-      margin-bottom: 10px;
-    }
-
-    .title {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
     .banner {
-      background-image: url('https://i.imgur.com/BPpFAAg.jpg'); /* placeholder */
+      background-image: url(s-l2400.png);
       background-size: cover;
-      background-position: center;
-      height: 250px;
+      width: 100%;
+      max-width: 1100px;
+      height: 300px;
+      background-color: #eee;
       border-radius: 15px;
-      position: relative;
-      color: white;
-      padding: 30px;
+      margin: 30px auto;
+      overflow: hidden;
+    }
+
+    .category-container {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-    }
-
-    .banner h2 {
-      font-size: 28px;
-      margin: 0;
-    }
-
-    .banner p {
-      font-size: 16px;
-      margin: 10px 0;
-    }
-
-    .banner button {
-      background: black;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 25px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 20px;
-      margin-top: 30px;
+      flex-wrap: wrap;
     }
 
-    .card {
-      background: white;
+    .category-box {
+      background-color: #eee;
+      width: 260px;
+      height: 220px;
       border-radius: 15px;
       padding: 20px;
-      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
-    .card h3 {
-      font-size: 18px;
-      margin: 10px 0;
+    @media (max-width: 768px) {
+      .main {
+        flex-direction: row;
+      }
     }
 
-    .card img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
+    .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Left & right spacing */
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.listing-types {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.listing-types button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  background: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.listing-types button.active {
+  background-color: black;
+  color: white;
+}
+
+.filter-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sort-dropdown,
+.view-toggle {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  background: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.results-count {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0;
+}
