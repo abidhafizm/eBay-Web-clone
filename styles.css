@@ -1143,7 +1143,7 @@ input, select {
   overflow: hidden;
 }
 
-.info-text {
+.info-text1 {
   flex: 1;
   padding: 60px 40px;
   display: flex;
@@ -1164,7 +1164,7 @@ input, select {
   font-size: 20px;
 }
 
-.info-image {
+.info-image1 {
   flex: 1;
 }
 
@@ -1218,34 +1218,171 @@ input, select {
       font-size: 15px;
     }
 
-    .container {
-      display: flex;
-      padding: 40px;
-      gap: 30px;
-    }
-
-    .sidebar {
-      width: 220px;
-    }
-
-    .sidebar h3 {
-      font-size: 16px;
+    .breadcrumb {
+      font-size: 14px;
+      color: #555;
       margin-bottom: 10px;
+      margin-top: 20px;
+      padding-top: 10px;
+      padding-left: 20px;
     }
 
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .sidebar ul li {
-      margin: 10px 0;
-    }
-
-    .sidebar ul li a {
+    .breadcrumb a {
+      text-decoration: none;
+      color: #0654ba;
+      font-weight: 500;
       text-decoration: none;
       color: #333;
+    }
+
+    .breadcrumb span {
+      margin: 0 5px;
+      color: #999;
+    }
+
+    .page-heading {
+      font-size: 36px;
+      font-weight: bold;
+      color: #111;
+      margin-top: 20px;
+      padding-top: 10px;
+      padding-left: 20px;
+    }
+
+    .electronics-layout {
+      display: flex;
+      padding: 30px;
+      gap: 30px;
+      min-height: 100vh;
+    }
+
+    /* LEFT SIDEBAR */
+    .category-sidebar {
+      width: 190px;
+      border-right: 1px solid #ddd;
+      height: 100vh;
+    }
+
+    .category-sidebar h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+
+    .category-sidebar ul {
+      list-style: none;
+    }
+
+    .category-sidebar ul li {
+      margin-bottom: 12px;
+    }
+
+    .category-sidebar ul li a {
+      text-decoration: none;
+      color: #000;
+      font-size: 15px;
+    }
+
+    .category-sidebar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* RIGHT CONTENT */
+    .electronics-content {
+      flex: 1;
+    }
+
+    .promo-banner {
+      width: 100%;
+      height: 250px;
+      background-color: #ccc;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      background-image: url('s-l2400.png'); /* Replace with your banner image */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .product-blocks {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .product-box {
+      background-color: #e7e7e7;
+      border-radius: 15px;
+      padding: 20px;
+      width: 300px;
+      height: 250px;
+      background-size: cover;
+    }
+
+    .filter-header-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+      margin-left: 18%;
+      margin-top: 0;
+    }
+
+    .listing-filters {
+      display: flex;
+      gap: 15px;
+      border: 1px solid #ccc;
+      padding: 5px;
+      border-radius: 30px;
+    }
+
+    .listing-filters button {
+      background: none;
+      border: none;
       font-size: 14px;
+      padding: 10px 15px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .listing-filters .active {
+      background-color: #111;
+      color: white;
+      font-weight: bold;
+    }
+
+    .results-count {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .sort-button, .view-button {
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      padding: 10px 15px;
+      font-size: 14px;
+      background-color: white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .sort-button:hover, .view-button:hover {
+      background-color: #f2f2f2;
+    }
+
+    .arrow-down::after {
+      content: "▼";
+      font-size: 10px;
     }
 
 
