@@ -16,62 +16,64 @@
       document.getElementById('navbar').innerHTML = data;
     });
 </script>
-    <div class="container">
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <h3>Shop by category</h3>
-    <ul>
-      <li><a href="#">Cameras & Photo</a></li>
-      <li><a href="#">Cell Phones & Accessories</a></li>
-      <li><a href="#">Computers/Tablets & Networking</a></li>
-      <li><a href="#">Home Surveillance</a></li>
-      <li><a href="#">Major Appliances</a></li>
-      <li><a href="#">Portable Audio & Headphones</a></li>
-      <li><a href="#">Surveillance & Smart Home</a></li>
-      <li><a href="#">TV, Video & Home Audio</a></li>
-      <li><a href="#">Vehicle Electronics & GPS</a></li>
-      <li><a href="#">Video Games & Consoles</a></li>
-      <li><a href="#">Virtual Reality</a></li>
-    </ul>
+  <div class="breadcrumb">
+    <a href="#">eBay</a>
+    <span>›</span>
+    <a href="#">Electronics</a>
   </div>
 
-  <!-- Main Content -->
-  <div class="main">
-     <a href="#"><div class="banner"></div></a>
-    
-  <div class="category-container">
-    <a href="#">
-    <div class="category-box" style="background-image: url(smartwatch.png); background-size: contain;">
-    </div>
-    </a>
-    <a href="#">
-    <div class="category-box" style="background-image: url(laptop.png); background-size: contain;">
-    </div>
-    </a>
-    <a href="#">
-    <div class="category-box" style="background-image: url(tablets.png); background-size: contain;">
-    </div>
-    </a>
+  <div class="page-heading">
+    Electronics
   </div>
-  </div>
-</div>
-<div class="container">
-  <div class="filter-bar">
-    <div class="listing-types">
-      <button class="active">All Listings</button>
-      <button>Auction</button>
-      <button>Buy It Now</button>
-      <button>Best Offer</button>
+    <div class="electronics-layout">
+    <!-- Sidebar -->
+    <div class="category-sidebar">
+      <h2>Shop by category</h2>
+      <ul>
+        <li><a href="#">Cameras & Photo</a></li>
+        <li><a href="#">Cell Phones & Accessories</a></li>
+        <li><a href="#">Computers/Tablets & Networking</a></li>
+        <li><a href="#">Home Surveillance</a></li>
+        <li><a href="#">Major Appliances</a></li>
+        <li><a href="#">Portable Audio & Headphones</a></li>
+        <li><a href="#">Smart Home Electronics</a></li>
+        <li><a href="#">TV, Video & Home Audio</a></li>
+        <li><a href="#">Vehicle Electronics & GPS</a></li>
+        <li><a href="#">Video Games & Consoles</a></li>
+        <li><a href="#">Virtual Reality</a></li>
+      </ul>
     </div>
 
-    <div class="filter-actions">
-      <div class="sort-dropdown">Sort: Best Match ▼</div>
-      <div class="view-toggle">☰ ▼</div>
+    <!-- Main Content -->
+    <div class="electronics-content">
+      <a href="#"><div class="promo-banner"></div></a>
+
+      <div class="product-blocks">
+        <a href="#"><div class="product-box" style="background-image: url(smartwatch.png);"></div></a>
+        <a href="#"><div class="product-box" style="background-image: url(laptop.png);"></div></a>
+        <a href="#"><div class="product-box" style="background-image: url(tablets.png);"></div></a>
+      </div>
     </div>
   </div>
+  <div class="filter-header-section">
+    <div>
+      <div class="listing-filters">
+        <button class="active">All Listings</button>
+        <button>Auction</button>
+        <button>Buy It Now</button>
+        <button>Best Offer</button>
+      </div>
+      <div class="results-count">1,490,656 results</div>
+    </div>
 
-  <p class="results-count">1,484,784 results</p>
-  <hr />
-</div>
+    <div class="actions">
+      <button class="sort-button">
+        Sort: Best Match <span class="arrow-down"></span>
+      </button>
+      <button class="view-button">
+        ☰ <span class="arrow-down"></span>
+      </button>
+    </div>
+  </div>
 </body>
 </html>
