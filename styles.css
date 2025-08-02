@@ -1254,6 +1254,7 @@ input, select {
       padding: 30px;
       gap: 30px;
       min-height: 100vh;
+      padding-bottom: 0px;
     }
 
     /* LEFT SIDEBAR */
@@ -1261,6 +1262,8 @@ input, select {
       width: 190px;
       border-right: 1px solid #ddd;
       height: 100vh;
+      position: sticky;
+      
     }
 
     .category-sidebar h2 {
