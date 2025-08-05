@@ -1249,178 +1249,80 @@ input, select {
       padding-left: 20px;
     }
 
-    .electronics-layout {
+    .page-split-wrapper {
       display: flex;
-      padding: 30px;
-      gap: 30px;
-      min-height: 100vh;
-      padding-bottom: 0px;
-      position: sticky;
-      overflow-y: auto;
-    }
-
-    /* LEFT SIDEBAR */
-    .category-sidebar {
-      width: 190px;
-      border-right: 1px solid #ddd;
       height: 100vh;
-      position: sticky;
-      top: 0;
-      left: 0;
+    }
+
+    .nav-column-205 {
+      width: 205px;
+      background-color: white;
+      padding: 10px;
       overflow-y: auto;
     }
 
-    .category-sidebar h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
-      margin-top: 0;
-    }
-
-    .category-sidebar ul {
-      list-style: none;
-    }
-
-    .category-sidebar ul li {
-      margin-bottom: 12px;
-    }
-
-    .category-sidebar ul li a {
-      text-decoration: none;
-      color: #000;
-      font-size: 15px;
-    }
-
-    .category-sidebar ul li a:hover {
-      text-decoration: underline;
-    }
-
-    /* RIGHT CONTENT */
-    .electronics-content {
+    .content-column-flex {
       flex: 1;
+      background-color: whi;
+      padding: 10px;
+      overflow-y: auto;
+      margin-right: 30px;
     }
 
-    .promo-banner {
-      width: 100%;
-      height: 250px;
-      background-color: #ccc;
-      border-radius: 12px;
-      margin-bottom: 25px;
-      background-image: url('s-l2400.png'); /* Replace with your banner image */
-      background-size: cover;
-      background-position: center;
-    }
-
-    .product-blocks {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .product-box {
-      background-color: #e7e7e7;
-      border-radius: 15px;
-      padding: 20px;
-      width: 300px;
-      height: 250px;
-      background-size: cover;
-    }
-
-    .filter-header-section {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 15px;
-      margin-left: 18%;
-      margin-top: 0;
-    }
-
-    .listing-filters {
-      display: flex;
-      gap: 15px;
-      border: 1px solid #ccc;
-      padding: 5px;
-      border-radius: 30px;
-    }
-
-    .listing-filters button {
-      background: none;
-      border: none;
-      font-size: 14px;
-      padding: 10px 15px;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-
-    .listing-filters .active {
-      background-color: #111;
-      color: white;
-      font-weight: bold;
-    }
-
-    .results-count {
-      font-size: 16px;
-      margin-top: 10px;
-    }
-
-    .actions {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .sort-button, .view-button {
-      border: 1px solid #ccc;
-      border-radius: 30px;
-      padding: 10px 15px;
-      font-size: 14px;
-      background-color: white;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .sort-button:hover, .view-button:hover {
-      background-color: #f2f2f2;
-    }
-
-    .arrow-down::after {
-      content: "▼";
-      font-size: 10px;
-    }
-
-    .custom-filter-container {
-  display: flex;
-  gap: 10px;
-  margin-left: 18%;
+    .shop-category-panel {
+  width: 250px;
+  padding: 20px;
+  background-color: white;
+  border-right: 1px solid #ddd;
 }
 
-.custom-filter-btn {
-  border: 1px solid #ccc;
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #ccc;
-  padding: 8px 16px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-radius: 20px;
-  cursor: pointer;
+.shop-category-heading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.shop-category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shop-category-list li {
+  margin-bottom: 12px;
+}
+
+.shop-category-list a {
+  text-decoration: none;
+  color: #000;
   font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  transition: background-color 0.3s ease;
 }
 
-.custom-filter-btn:hover {
-  background-color: #e0e0e0;
+.shop-category-list a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.custom-arrow {
-  font-size: 12px;
+.custom-banner-link {
+      background-image: url(s-l2400.png);  
+      background-size: cover;
+      width: 100%;
+      max-width: 1100px;
+      height: 300px;
+      border-radius: 12px;
+      background-color: #f0f0f0;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+
+    .box-smartphones,
+.box-computers,
+.box-tablets {
+  background-size: cover;
+  width: 330px;
+  height: 300px;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  margin: 10px;
+  display: inline-block;
 }
-
-
-    
